@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        <input id="num1" type="number" />
+    </p>
+    <p>
+        <input id="num2" type="number" />
+    </p>
+    <p>
+        <input id="num3" type="number" />
+    </p>
+    <p>
+        <input id="num4" type="number" />
+    </p>
+    <p>
+        <input id="num5" type="number" />
+    </p>
+    <p>
+        <button onclick="LowestNumber()">Lowest number</button>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button onclick="GreatestNumber()">Greatest number</button></p>
+   
+     <p id="answer"></p>
+
+    <script>
+
+        function LowestNumber() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            var d = document.getElementById("num4").value;
+            var e = document.getElementById("num5").value;
+            document.getElementById("answer").innerHTML = Math.min(a, b, c, d, e);
+        }
+
+        function GreatestNumber() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            var d = document.getElementById("num4").value;
+            var e = document.getElementById("num5").value;
+            document.getElementById("answer").innerHTML = Math.max(a, b, c, d, e);
+        }
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        <input id="num1" type="number" />
+    </p>
+    <p>
+        <input id="num2" type="number" />
+    </p>
+    <p>
+        <input id="num3" type="number" />
+    </p>
+    <p>
+        <input id="num4" type="number" />
+    </p>
+    <p>
+        <input id="num5" type="number" />
+    </p>
+    <p>
+        <button onclick="LowestNumber()">Lowest number</button>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button onclick="GreatestNumber()">Greatest number</button><br>
+
+    <p>
+
+        <button onclick="Mean()">Mean</button>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button onclick="Sum()">Sum</button>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button onclick="Product()">Product</button>
+    </p>
+
+    </p>
+
+    <p id="answer"></p>
+
+    <script type="text/javascript">
+
+        function LowestNumber() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            var d = document.getElementById("num4").value;
+            var e = document.getElementById("num5").value;
+            document.getElementById("answer").innerHTML = math.min(a, b, c, d, e);
+        }
+
+        function GreatestNumber() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            var d = document.getElementById("num4").value;
+            var e = document.getElementById("num5").value;
+            document.getElementById("answer").innerHTML = math.max(a, b, c, d, e);
+        }
+        function Mean () {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            var d = document.getElementById("num4").value;
+            var e = document.getElementById("num5").value;
+            document.getElementById("answer").innerHTML = math.avg(a, b, c, d, e);
+        }
+
+        function Sum () {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            var d = document.getElementById("num4").value;
+            var e = document.getElementById("num5").value;
+            document.getElementById("answer").innerHTML = math.sum(a, b, c, d, e);
+        }
+
+        function Product () {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            var d = document.getElementById("num4").value;
+            var e = document.getElementById("num5").value;
+            document.getElementById("answer").innerHTML = math.prod(a, b, c, d, e);
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+</head>
+<body>
+    <p>
+        Please choose 2 numbers:
+    </p>
+    <p>
+        1) <input id="num1" type="number" />
+    </p>
+    <p>
+        2) <input id="num2" type="number" />
+    </p>
+    <p>
+        <button onclick="FizzBuzz()">Let's Play!</button>
+    </p>
+
+    <script type="text/javascript"
+
+        function FizzBuzz(){
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+
+  for(i=1; i<=100; i++){
+    if (i % (a * b) === 0){
+        console.log("FizzBuzz");
+    }
+    else if (i % a === 0){
+        console.log("Fizz");
+    }
+    else if (i % b === 0){
+        console.log("Buzz");
+    }
+    else{
+        console.log(i);
+    }
+}
+}
+    </script>
+
+</body>
+</html>
