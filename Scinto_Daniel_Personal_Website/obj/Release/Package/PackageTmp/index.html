@@ -110,7 +110,6 @@
         </section>
 
         <!-- Intro section end -->
-
         <!-- Profile section start -->
 
         <section id="profile" class="section">
@@ -473,7 +472,7 @@
                     </div>
 
                     <div class="col-md-3 col-md-offset-1 col-sm-6 wow bounceInLeft">
-                        <a href="" class="pop-up" data-toggle="modal" data-target="#5Numbers">
+                        <a href="" class="pop-up" data-toggle="modal" data-target="#5numbers">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/logo/calcuator.png" alt="">
@@ -487,7 +486,7 @@
                     </div>
 
                     <div class="col-md-3 col-md-offset-1 col-sm-6 wow bounceInUp">
-                        <a href="assets/images/logo/bulb.png" class="pop-up" title="Factorials">
+                        <a href="" class="pop-up" data-toggle="modal" data-target="#factorials">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/logo/bulb.png" alt="">
@@ -515,7 +514,7 @@
                     </div>
 
                     <div class="col-md-3 col-md-offset-1 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
-                        <a href="assets/images/logo/right 4.png" class="pop-up" title="Palindrome">
+                        <a href="" class="pop-up" data-toggle="modal" data-target="#palindrome">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/logo/right 4.png" alt="">
@@ -529,7 +528,7 @@
                     </div>
 
                     <div class="col-md-3 col-md-offset-1 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
-                        <a href="assets/images/logo/chat 6.png" class="pop-up" title="Caption 5">
+                        <a href="" class="pop-up" data-toggle="modal" data-target="comingsoon1">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/logo/chat 6.png" alt="">
@@ -543,7 +542,7 @@
                     </div>
 
                     <div class="col-md-3 col-md-offset-1 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
-                        <a href="assets/images/logo/award ribbon.png" class="pop-up" title="Caption 6">
+                        <a href="" class="pop-up" data-toggle="modal" data-target="comingsoon2">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/logo/award ribbon.png" alt="">
@@ -784,7 +783,7 @@
     </script>
 
     <!-- Modal -->
-    <div id="5Numbers" class="modal fade" role="dialog">
+    <div id="5numbers" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -795,28 +794,28 @@
                 </div>
                 <div class="modal-body">
 
-                        <p>
-                            1) Enter any 5 numbers in the spaces below.
-                        </p>
-                        <p>
-                            2) Choose if you would like to find the least, greatest, sum, product, or mean of the set of numbers.
-                        </p>
+                    <p>
+                        1) Enter any 5 numbers in the spaces below.
+                    </p>
+                    <p>
+                        2) Choose if you would like to find the least, greatest, sum, product, or mean of the set of numbers.
+                    </p>
 
-                        <p>
-                            <input id="num1" type="text" />
-                        </p>
-                        <p>
-                            <input id="num2" type="text" />
-                        </p>
-                        <p>
-                            <input id="num3" type="text" />
-                        </p>
-                        <p>
-                            <input id="num4" type="text" />
-                        </p>
-                        <p>
-                            <input id="num5" type="text" />
-                        </p>
+                    <p>
+                        <input id="num1" type="text" />
+                    </p>
+                    <p>
+                        <input id="num2" type="text" />
+                    </p>
+                    <p>
+                        <input id="num3" type="text" />
+                    </p>
+                    <p>
+                        <input id="num4" type="text" />
+                    </p>
+                    <p>
+                        <input id="num5" type="text" />
+                    </p>
                     <p>
                         <button onclick="LowestNumber()">Least</button>
 
@@ -828,64 +827,81 @@
 
                         <button onclick="findProduct()">Product</button>
                     </p>
-                    
+
                     <b><p id="answer"></b>
                     </p>
 
                     <pre class="brush: js">
-                        <script>
+                    <script>
 
-                         function LowestNumber() {
-                            var a = document.getElementById("num1").value;
-                            var b = document.getElementById("num2").value;
-                            var c = document.getElementById("num3").value;
-                            var d = document.getElementById("num4").value;
-                            var e = document.getElementById("num5").value;
-                            document.getElementById("answer").innerHTML = Math.min(a, b, c, d, e);
-                         }
+    function LowestNumber() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var c = document.getElementById("num3").value;
+        var d = document.getElementById("num4").value;
+        var e = document.getElementById("num5").value;
+        document.getElementById("answer").innerHTML = Math.min(a, b, c, d, e);
+    }
 
-                        function GreatestNumber() {
-                            var a = document.getElementById("num1").value;
-                            var b = document.getElementById("num2").value;
-                            var c = document.getElementById("num3").value;
-                            var d = document.getElementById("num4").value;
-                            var e = document.getElementById("num5").value;
-                            document.getElementById("answer").innerHTML = Math.max(a, b, c, d, e);
-                        }
+    function GreatestNumber() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var c = document.getElementById("num3").value;
+        var d = document.getElementById("num4").value;
+        var e = document.getElementById("num5").value;
+        document.getElementById("answer").innerHTML = Math.max(a, b, c, d, e);
+    }
 
-                        function findMean () {
-                            var a = +document.getElementById("num1").value;
-                            var b = +document.getElementById("num2").value;
-                            var c = +document.getElementById("num3").value;
-                            var d = +document.getElementById("num4").value;
-                            var e = +document.getElementById("num5").value;
-                            var mean = (a + b + c + d + e) / 5
-                            document.getElementById("answer").innerHTML = mean;
-                        }
+    function findMean() {
+        var a = +document.getElementById("num1").value;
+        var b = +document.getElementById("num2").value;
+        var c = +document.getElementById("num3").value;
+        var d = +document.getElementById("num4").value;
+        var e = +document.getElementById("num5").value;
+        var mean = (a + b + c + d + e) / 5
+        document.getElementById("answer").innerHTML = mean;
+    }
 
-                        function findSum() {
-                            var a = +document.getElementById("num1").value;
-                            var b = +document.getElementById("num2").value;
-                            var c = +document.getElementById("num3").value;
-                            var d = +document.getElementById("num4").value;
-                            var e = +document.getElementById("num5").value;
-                            var sum = (a + b + c + d + e)
-                            document.getElementById("answer").innerHTML = sum;
-                        }
+    function findSum() {
+        var a = +document.getElementById("num1").value;
+        var b = +document.getElementById("num2").value;
+        var c = +document.getElementById("num3").value;
+        var d = +document.getElementById("num4").value;
+        var e = +document.getElementById("num5").value;
+        var sum = (a + b + c + d + e)
+        document.getElementById("answer").innerHTML = sum;
+    }
 
-                        function findProduct () {
-                            var a = +document.getElementById("num1").value;
-                            var b = +document.getElementById("num2").value;
-                            var c = +document.getElementById("num3").value;
-                            var d = +document.getElementById("num4").value;
-                            var e = +document.getElementById("num5").value;
-                            var product = (a * b * c * d * e)
-                        document.getElementById("answer").innerHTML = product;
-                        }
+    function findProduct() {
+        var a = +document.getElementById("num1").value;
+        var b = +document.getElementById("num2").value;
+        var c = +document.getElementById("num3").value;
+        var d = +document.getElementById("num4").value;
+        var e = +document.getElementById("num5").value;
+        var product = (a * b * c * d * e)
+        document.getElementById("answer").innerHTML = product;
+    }
 
                         </script>
-                    </pre> 
+                    </pre>
 
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="factorials" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Factorials</h4>
+                </div>
+                <div class="modal-body">
 
                 </div>
             </div>
@@ -918,46 +934,80 @@
                     </p>
                     <p>
                         2) <input id="num2" type="number" /> "buzz"
-                           
+
                         &nbsp; &nbsp; &nbsp;
                         <button onclick="FizzBuzz();">Let's Play!</button>
 
-                            <pre class="brush: js">
-                            <script>
+                        <pre class="brush: js">
+                        <script>
 
-                                function FizzBuzz(){
-                                    var a = document.getElementById("num1").value;
-                                    var b = document.getElementById("num2").value;
-                                    var obj = document.getElementById("result");
-                                    var txt = "";
-                                    var i;
+    function FizzBuzz() {
+        var a = document.getElementById("num1").value;
+        var b = document.getElementById("num2").value;
+        var obj = document.getElementById("result");
+        var txt = "";
+        var i;
 
-                                    for (i = 1; i <= 100; i++) {
-                                        if (i % (a * b) === 0) {
-                                            txt += "FizzBuzz" + " ";
-                                        }
-                                        else if (i % a === 0) {
-                                            txt += "Fizz" + " ";
-                                        }
-                                        else if (i % b === 0) {
-                                            txt += "Buzz" + " ";
-                                        }
-                                        else {
-                                            txt += i + " ";
-                                        }
-                                    }
-                                    obj.innerHTML = txt;
-                                }
+        for (i = 1; i <= 100; i++) {
+            if (i % (a * b) === 0) {
+                txt += "FizzBuzz" + " ";
+            }
+            else if (i % a === 0) {
+                txt += "Fizz" + " ";
+            }
+            else if (i % b === 0) {
+                txt += "Buzz" + " ";
+            }
+            else {
+                txt += i + " ";
+            }
+        }
+        obj.innerHTML = txt;
+    }
                             </script>
                             </pre>
 
-                            <p id="result"></p>
-                   
-                    </div>
+                    <p id="result"></p>
+
                 </div>
             </div>
         </div>
+    </div>
 
+    <!-- Modal -->
+    <div id="palindrome" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-    </body>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Palindrome</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="comingsoon1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Coming Soon</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
     </html>

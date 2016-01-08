@@ -8,12 +8,14 @@
 <body>
     <p>Enter a number to find its factorial(!)</p>
 
-    <input id="factorial" type="text" />
+    <input id="num1" type="text" />
+
+    <button onclick="findFact()">GO!</button>
 
     <p id="result"></p>
 
     <script>
-        function findFact() {
+        function fact(num) {
             if (factorial < 0) {
                 document.getElementById("result").innerHTML = "Please enter a positive number!";
             }
@@ -21,16 +23,11 @@
                 document.getElementById("result").innerHTML = 1;
             }
             else {
-                document.getElementById("result").innerHTML = (factorial * findFact(factorial - 1));
-            }
+                var factorial = 1;
+                for (i = num; i <= 1; i--)
+                return factorial
         }
-
-    document.getElementById("result").innerHTML = factorial;
-
     </script>
-
-    <button onclick="findFact()">GO!</button>
-
 
 </body>
 </html>
