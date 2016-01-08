@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+        Enter a word or phrase to determine if it's a palindrome.
+    </p>
+    <p>
+        A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
+    </p>
+    
+    <p>
+    <input id="str" type="text" /> 
+    </p>
+
+    <p>
+    <button onclick="palindrome(str)">Check</button>
+    </p>
+
+    <p>
+        <p id="result">
+    </p>
+    
+    <script>
+    function palindrome(str) {
+    str = str.toLowerCase().replace(/[^az]+/g,"");
+    return str === str.split("").reverse().join("");
+    }
+    document.getElementById("result").innerHTML = str;
+    </script>
+</body>
+</html>

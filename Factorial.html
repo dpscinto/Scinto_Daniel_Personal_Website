@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>Enter a number to find its factorial(!)</p>
+
+    <input id="factorial" type="text" />
+
+    <p id="result"></p>
+
+    <script>
+        function findFact() {
+            if (factorial < 0) {
+                document.getElementById("result").innerHTML = "Please enter a positive number!";
+            }
+            else if (factorial === 0) {
+                document.getElementById("result").innerHTML = 1;
+            }
+            else {
+                document.getElementById("result").innerHTML = (factorial * findFact(factorial - 1));
+            }
+        }
+
+    document.getElementById("result").innerHTML = factorial;
+
+    </script>
+
+    <button onclick="findFact()">GO!</button>
+
+
+</body>
+</html>
