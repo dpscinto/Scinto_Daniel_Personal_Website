@@ -7,8 +7,8 @@
 	<meta name="author" content="">
 
 	<title>Dan Scinto</title>
-
-	<!-- CSS -->
+    
+    <!-- CSS -->
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
@@ -709,7 +709,7 @@
                                 <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-custom-1">
+                            <button type="submit" class="btn btn-custom-1 pull-right">
                                 <i class="fa fa-bullhorn icon-before"></i> Send it
                             </button>
 
@@ -777,10 +777,10 @@
     <!--SyntaxHighlighter-->
     <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
     <script src="Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
-
     <script type="text/javascript">
-        SyntaxHighlighter.all();
-    </script>
+        SyntaxHighlighter.all();</script>
+    <!--My JS file-->
+    <script type="text/javascript" src="assets/js/jsexcercises.js"></script>
 
     <!-- Modal -->
     <div id="5numbers" class="modal fade" role="dialog">
@@ -831,8 +831,7 @@
                     <b><p id="answer"></b>
                     </p>
 
-                    <pre class="brush: js">
-                    <script>
+<pre class="brush: js">
 
     function LowestNumber() {
         var a = document.getElementById("num1").value;
@@ -882,8 +881,7 @@
         document.getElementById("answer").innerHTML = product;
     }
 
-                        </script>
-                    </pre>
+</pre>
 
 
                 </div>
@@ -902,7 +900,34 @@
                     <h4 class="modal-title">Factorials</h4>
                 </div>
                 <div class="modal-body">
+                    <body>
+                        <p>Enter a number to find its factorial(!)</p>
+                        <p>Example of a factorial:  5! = 5 * 4 * 3 * 2 * 1</p>
+                        <input id="num6" type="text" />
 
+                        <button onclick="findFact()">GO!</button>
+
+                        <p id="facResult"></p>
+
+<pre class="brush: js">
+            function findFact() {
+            var num = document.getElementById("num6").value;
+            if (num < 0) {
+                document.getElementById("facResult").innerHTML = "Please enter a positive number!";
+            }
+            else if (num === 0) {
+                document.getElementById("facResult").innerHTML = "1";
+            }
+            else {
+                var factorial = 1;
+                for (i = num; i > 1; i--) {
+                    factorial *= i;
+                }
+                document.getElementById("facResult").innerHTML = factorial;
+            }
+        }
+</pre>
+                    </body>
                 </div>
             </div>
         </div>
@@ -916,7 +941,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">FizzBuzz</h4>
+                    <h4 class="m    odal-title">FizzBuzz</h4>
                 </div>
                 <div class="modal-body">
 
@@ -930,44 +955,40 @@
                         Please choose 2 numbers to start:
                     </p>
                     <p>
-                        1) <input id="num1" type="number" /> "fizz"
+                        1) <input id="fbnum1" type="text" /> "fizz"
                     </p>
                     <p>
-                        2) <input id="num2" type="number" /> "buzz"
+                        2) <input id="fbnum2" type="text" /> "buzz"
 
                         &nbsp; &nbsp; &nbsp;
                         <button onclick="FizzBuzz();">Let's Play!</button>
 
-                        <pre class="brush: js">
-                        <script>
+                    <p id="fbresult"></p>
 
-    function FizzBuzz() {
-        var a = document.getElementById("num1").value;
-        var b = document.getElementById("num2").value;
-        var obj = document.getElementById("result");
-        var txt = "";
-        var i;
-
-        for (i = 1; i <= 100; i++) {
-            if (i % (a * b) === 0) {
-                txt += "FizzBuzz" + " ";
+<pre class="brush: js">
+        function FizzBuzz() {
+            var a = document.getElementById("fbnum1").value;
+            var b = document.getElementById("fbnum2").value;
+            var obj = document.getElementById("fbresult");
+            var txt = "";
+            var i;
+            for (i = 1; i <= 100; i++) {
+                if (i % (a * b) === 0) {
+                    txt += "FizzBuzz" + " ";
+                }
+                else if (i % a === 0) {
+                    txt += "Fizz" + " ";
+                }
+                else if (i % b === 0) {
+                    txt += "Buzz" + " ";
+                }
+                else {
+                    txt += i + " ";
+                }
             }
-            else if (i % a === 0) {
-                txt += "Fizz" + " ";
-            }
-            else if (i % b === 0) {
-                txt += "Buzz" + " ";
-            }
-            else {
-                txt += i + " ";
-            }
+            obj.innerHTML = txt;
         }
-        obj.innerHTML = txt;
-    }
-                            </script>
-                            </pre>
-
-                    <p id="result"></p>
+</pre>
 
                 </div>
             </div>
@@ -985,6 +1006,43 @@
                     <h4 class="modal-title">Palindrome</h4>
                 </div>
                 <div class="modal-body">
+                    <body>
+                        <p>
+                            Enter a word or phrase to determine if it's a palindrome.
+                        </p>
+                        <p>
+                            A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
+                        </p>
+
+                        <p>
+                            (Palindrome Examples: "radar", "12321", and "race car".)
+                        </p>
+
+                        <p>
+                            <input id="palStr" type="text" />
+                        </p>
+
+                        <p>
+                            <button onclick="palindrome()">Check</button>
+                        </p>
+
+                        <p>
+                        <p id="palResult">
+                        </p>
+                    </body>
+
+<pre class="brush: js">
+        function palindrome() {
+        var str = document.getElementById('palStr').value;
+        str = str.toLowerCase().replace(/[^az]+/g,"");
+        if (str === str.split("").reverse().join("")) {
+            document.getElementById("palResult").innerHTML = "This is a palindrome !!!";
+        }
+        else{
+            document.getElementById("palResult").innerHTML = "This is NOT a palindrome. Try something else!";
+        }
+    }
+</pre>
 
                 </div>
             </div>

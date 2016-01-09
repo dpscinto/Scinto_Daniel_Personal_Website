@@ -74,8 +74,8 @@ function findProduct () {
 //start of fizzbuzz
 
         function FizzBuzz() {
-            var a = document.getElementById("fbnum1").value;
-            var b = document.getElementById("fbnum2").value;
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
             var obj = document.getElementById("fbresult");
             var txt = "";
             var i;
@@ -103,6 +103,7 @@ function findProduct () {
 
     function palindrome() {
         var str = document.getElementById('palStr').value;
+        console.log("The string entered is: "+str);
         str = str.toLowerCase().replace(/[^az]+/g,"");
         if (str === str.split("").reverse().join("")) {
             document.getElementById("palResult").innerHTML = "This is a palindrome !!!";

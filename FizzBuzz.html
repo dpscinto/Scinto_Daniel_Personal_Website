@@ -1,39 +1,20 @@
-<body> 
-    
-    
-    <script>
-        function FizzBuzz() {
-            var a = document.getElementById("num1").value;
-            var b = document.getElementById("num2").value;
-            var obj = document.getElementById("result");
-            var txt = "";
-            var i;
+<!DOCTYPE html>
 
-            for (i = 1; i <= 100; i++) {
-                if (i % (a * b) === 0) {
-                    txt += "FizzBuzz" + " ";
-                }
-                else if (i % a === 0) {
-                    txt += "Fizz" + " ";
-                }
-                else if (i % b === 0) {
-                    txt += "Buzz" + " ";
-                }
-                else {
-                    txt += i + " ";
-                }
-            }
-            obj.innerHTML = txt;
-        }
-    </script>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
     <p>
-    <b>Fizz Buzz </b>is a group word game for children to teach them about division. Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five with the word "buzz".
+        <b>Fizz Buzz </b>is a group word game for children to teach them about division. Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five with the word "buzz".
     </p>
     <p>
-    We are going to change things up and let you decide which divisors trigger "fizz" and "buzz".
+        We are going to change things up and let you decide which divisors trigger "fizz" and "buzz".
     </p>
     <p>
-      Please choose 2 numbers to start:
+        Please choose 2 numbers to start:
     </p>
     <p>
         1) <input id="num1" type="number" /> "fizz"
@@ -42,13 +23,11 @@
         2) <input id="num2" type="number" /> "buzz"
     </p>
 
-    <p id="result">
+    <p id="result"></p>
 
-    </p>
-    
     <p>
-      <button onclick="FizzBuzz();">Let's Play!</button>
+        <button onclick="FizzBuzz();">Let's Play!</button>
     </p>
-  
 
 </body>
+</html>

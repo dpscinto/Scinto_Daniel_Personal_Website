@@ -263,6 +263,7 @@
     <Content Include="assets\js\jquery.simple-text-rotator.js" />
     <Content Include="assets\js\jquery.simple-text-rotator.min.js" />
     <Content Include="assets\js\jquery.waypoints.js" />
+    <Content Include="assets\js\jsexcercises.js" />
     <Content Include="assets\js\owl.carousel.js" />
     <Content Include="assets\js\owl.carousel.min.js" />
     <Content Include="assets\js\smoothscroll.js" />
