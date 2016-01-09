@@ -12,13 +12,17 @@
     <p>
         A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
     </p>
+
+    <p>
+        (Some examples of palindromes are "radar", "12321", and "race car".)
+    </p>
     
     <p>
-    <input id="str" type="text" /> 
+    <input id="palStr" type="text" /> 
     </p>
 
     <p>
-    <button onclick="palindrome(str)">Check</button>
+    <button onclick="palindrome()">Check</button>
     </p>
 
     <p>
@@ -26,11 +30,17 @@
     </p>
     
     <script>
-    function palindrome(str) {
+        function palindrome() {
+            var str = document.getElementById('palStr').value;
+            console.log("The string entered is: "+str);
     str = str.toLowerCase().replace(/[^az]+/g,"");
-    return str === str.split("").reverse().join("");
+    if (str === str.split("").reverse().join("")) {
+        document.getElementById("result").innerHTML = "This is a palindrome !!!";
     }
-    document.getElementById("result").innerHTML = str;
+    else{
+        document.getElementById("result").innerHTML = "This is NOT a palindrome. Try something else!";
+    }
+    }
     </script>
 </body>
 </html>

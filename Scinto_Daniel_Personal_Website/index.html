@@ -709,7 +709,7 @@
                                 <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-custom-1">
+                            <button type="submit" class="btn btn-custom-1 pull-right">
                                 <i class="fa fa-bullhorn icon-before"></i> Send it
                             </button>
 
@@ -777,10 +777,11 @@
     <!--SyntaxHighlighter-->
     <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
     <script src="Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
-
     <script type="text/javascript">
-        SyntaxHighlighter.all();
-    </script>
+        SyntaxHighlighter.all();</script>
+    <!--My JS file-->
+    <script type="text/javascript" src="jsexercises.js"></script>
+
 
     <!-- Modal -->
     <div id="5numbers" class="modal fade" role="dialog">
@@ -916,7 +917,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">FizzBuzz</h4>
+                    <h4 class="m    odal-title">FizzBuzz</h4>
                 </div>
                 <div class="modal-body">
 
@@ -930,10 +931,10 @@
                         Please choose 2 numbers to start:
                     </p>
                     <p>
-                        1) <input id="num1" type="number" /> "fizz"
+                        1) <input id="fbnum1" type="number" /> "fizz"
                     </p>
                     <p>
-                        2) <input id="num2" type="number" /> "buzz"
+                        2) <input id="fbnum2" type="number" /> "buzz"
 
                         &nbsp; &nbsp; &nbsp;
                         <button onclick="FizzBuzz();">Let's Play!</button>
@@ -942,9 +943,9 @@
                         <script>
 
     function FizzBuzz() {
-        var a = document.getElementById("num1").value;
-        var b = document.getElementById("num2").value;
-        var obj = document.getElementById("result");
+        var a = document.getElementById("fbnum1").value;
+        var b = document.getElementById("fbnum2").value;
+        var obj = document.getElementById("fbresult");
         var txt = "";
         var i;
 
@@ -967,7 +968,7 @@
                             </script>
                             </pre>
 
-                    <p id="result"></p>
+                    <p id="fbresult"></p>
 
                 </div>
             </div>

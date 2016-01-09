@@ -218,7 +218,7 @@ a,
 
 .btn-custom-1, .btn-custom-2 {
 	background: transparent;
-	border: 2px solid #EF4836;
+	border: 2px solid #8C8C8C;
 	padding: 15px 25px;
 }
 
@@ -227,8 +227,8 @@ a,
 }
 
 .btn-custom-1:hover, .btn-custom-1:focus, .btn-custom-1:active, .btn-custom-1.active {
-	background: #EF4836;
-	border: 2px solid #EF4836;
+	background: #4C4C4C;
+	border: 2px solid #8C8C8C;
 	color: #FFF;
 }
 
@@ -688,7 +688,10 @@ h3 > .fa {
 	opacity: 0;
 	color: #222;
 }
-/*-----------------------------------------------*/
+/* ---------------------------------------------- /*
+ * Photography
+/* ---------------------------------------------- */
+
 #credit{
     text-align: right;
     margin-right: 20px;
