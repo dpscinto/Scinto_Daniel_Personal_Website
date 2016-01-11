@@ -79,3 +79,4 @@ C:\Users\Dan Scinto\Documents\Visual Studio 2015\Projects\Scinto_Daniel_Personal
 C:\Users\Dan Scinto\Documents\Visual Studio 2015\Projects\Scinto_Daniel_Personal_Website\Scinto_Daniel_Personal_Website\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Dan Scinto\Documents\Visual Studio 2015\Projects\Scinto_Daniel_Personal_Website\Scinto_Daniel_Personal_Website\obj\Release\Scinto_Daniel_Personal_Website.dll
 C:\Users\Dan Scinto\Documents\Visual Studio 2015\Projects\Scinto_Daniel_Personal_Website\Scinto_Daniel_Personal_Website\obj\Release\Scinto_Daniel_Personal_Website.pdb
+C:\Users\Dan Scinto\Documents\Visual Studio 2015\Projects\Scinto_Daniel_Personal_Website\Scinto_Daniel_Personal_Website\obj\Release\Scinto_Daniel_Personal_Website.csprojResolveAssemblyReference.cache

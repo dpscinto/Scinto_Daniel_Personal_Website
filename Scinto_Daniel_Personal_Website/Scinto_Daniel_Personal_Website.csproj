@@ -225,6 +225,11 @@
     <Content Include="assets\css\simpletextrotator.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\images\2012-06-21 17.01.11.jpg" />
+    <Content Include="assets\images\2013-11-02 12.16.43.jpg" />
+    <Content Include="assets\images\2014-04-24 16.31.49.jpg" />
+    <Content Include="assets\images\2014-06-23 17.14.45.jpg" />
+    <Content Include="assets\images\2014-07-12 19.58.48.jpg" />
     <Content Include="assets\images\488.GIF" />
     <Content Include="assets\images\DS.jpg" />
     <Content Include="assets\images\DS1.jpg" />
@@ -248,9 +253,14 @@
     <Content Include="assets\images\p1.jpg" />
     <Content Include="assets\images\p2.jpg" />
     <Content Include="assets\images\p3.jpg" />
+    <Content Include="assets\images\P3270346.JPG" />
     <Content Include="assets\images\p5.jpg" />
     <Content Include="assets\images\p6.jpg" />
+    <Content Include="assets\images\P6010629.JPG" />
+    <Content Include="assets\images\P7040326.JPG" />
+    <Content Include="assets\images\P7060406.JPG" />
     <Content Include="assets\images\p8.jpg" />
+    <Content Include="assets\images\P8161524.JPG" />
     <Content Include="assets\js\custom.js" />
     <Content Include="assets\js\jquery-1.11.0.js" />
     <Content Include="assets\js\jquery-1.11.0.min.js" />

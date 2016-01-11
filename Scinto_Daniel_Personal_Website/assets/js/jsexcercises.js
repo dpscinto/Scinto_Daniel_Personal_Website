@@ -1,52 +1,42 @@
 //start of 5 numbers
 
-function LowestNumber() {
-    var a = document.getElementById("num1").value;
-    var b = document.getElementById("num2").value;
-    var c = document.getElementById("num3").value;
-    var d = document.getElementById("num4").value;
-    var e = document.getElementById("num5").value;
-    document.getElementById("answer").innerHTML = Math.min(a, b, c, d, e);
+function getValues() {
+    var a = parseInt(document.getElementById("num1").value, 10);
+    var b = parseInt(document.getElementById("num2").value, 10);
+    var c = parseInt(document.getElementById("num3").value, 10);
+    var d = parseInt(document.getElementById("num4").value, 10);
+    var e = parseInt(document.getElementById("num5").value, 10);
+    var arr = [a, b, c, d, e]
+    return arr;
 }
+
+function LowestNumber() {
+    var arr = getValues();
+    document.getElementById("answer").innerHTML = Math.min(arr[0], arr[1], arr[2], arr[3], arr[4]);
+    }
 
 function GreatestNumber() {
-    var a = document.getElementById("num1").value;
-    var b = document.getElementById("num2").value;
-    var c = document.getElementById("num3").value;
-    var d = document.getElementById("num4").value;
-    var e = document.getElementById("num5").value;
-    document.getElementById("answer").innerHTML = Math.max(a, b, c, d, e);
-}
+    var arr = getValues();
+    document.getElementById("answer").innerHTML = Math.max(arr[0], arr[1], arr[2], arr[3], arr[4]);
+    }
 
-function findMean () {
-    var a = +document.getElementById("num1").value;
-    var b = +document.getElementById("num2").value;
-    var c = +document.getElementById("num3").value;
-    var d = +document.getElementById("num4").value;
-    var e = +document.getElementById("num5").value;
-    var mean = (a + b + c + d + e) / 5
+function findMean() {
+    var arr = getValues();
+    var mean = (arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) / 5;
     document.getElementById("answer").innerHTML = mean;
-}
+    }
 
 function findSum() {
-    var a = +document.getElementById("num1").value;
-    var b = +document.getElementById("num2").value;
-    var c = +document.getElementById("num3").value;
-    var d = +document.getElementById("num4").value;
-    var e = +document.getElementById("num5").value;
-    var sum = (a + b + c + d + e)
+    var arr = getValues();
+    var sum = (arr[0] + arr[1] + arr[2] + arr[3] + arr[4]);
     document.getElementById("answer").innerHTML = sum;
-}
+    }
 
-function findProduct () {
-    var a = +document.getElementById("num1").value;
-    var b = +document.getElementById("num2").value;
-    var c = +document.getElementById("num3").value;
-    var d = +document.getElementById("num4").value;
-    var e = +document.getElementById("num5").value;
-    var product = (a * b * c * d * e)
+function findProduct(a, b, c, d, e) {
+    var arr = getValues();
+    var product = (arr[0] * arr[1] * arr[2] * arr[3] * arr[4]);
     document.getElementById("answer").innerHTML = product;
-}
+    }
 
 //end of 5 numbers
 
@@ -62,7 +52,7 @@ function findProduct () {
             }
             else {
                 var factorial = 1;
-                for (i = num; i > 1; i--) {
+                for (var i = num; i > 1; i--) {
                     factorial *= i;
                 }
                 document.getElementById("facResult").innerHTML = factorial;
@@ -74,13 +64,11 @@ function findProduct () {
 //start of fizzbuzz
 
         function FizzBuzz() {
-            var a = document.getElementById("num1").value;
-            var b = document.getElementById("num2").value;
-            var obj = document.getElementById("fbresult");
+            var a = document.getElementById("fbnum1").value;
+            var b = document.getElementById("fbnum2").value;
             var txt = "";
-            var i;
 
-            for (i = 1; i <= 100; i++) {
+            for (var i = 1; i <= 100; i++) {
                 if (i % (a * b) === 0) {
                     txt += "FizzBuzz" + " ";
                 }
@@ -94,23 +82,23 @@ function findProduct () {
                     txt += i + " ";
                 }
             }
-            obj.innerHTML = txt;
+            document.getElementById("fbresult").innerHTML = txt;
         }
 
 //end of fizzbuzz
 
 //start of palindrome
 
-    function palindrome() {
-        var str = document.getElementById('palStr').value;
-        console.log("The string entered is: "+str);
-        str = str.toLowerCase().replace(/[^az]+/g,"");
-        if (str === str.split("").reverse().join("")) {
-            document.getElementById("palResult").innerHTML = "This is a palindrome !!!";
+        function palindrome() {
+            var str = document.getElementById('palStr').value;
+            str = str.replace(/\s/g, '');
+            console.log(str + " and then " + str.split("").reverse().join(""))
+            if (str === str.split("").reverse().join("")) {
+                document.getElementById("palResult").innerHTML = "This is a palindrome !!!";
+            }
+            else {
+                document.getElementById("palResult").innerHTML = "This is NOT a palindrome. Try something else!";
+            }
         }
-        else{
-            document.getElementById("palResult").innerHTML = "This is NOT a palindrome. Try something else!";
-        }
-    }
 
 //end of palindrome
