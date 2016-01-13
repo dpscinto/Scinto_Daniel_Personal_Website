@@ -231,6 +231,7 @@
     <Content Include="assets\images\2014-06-23 17.14.45.jpg" />
     <Content Include="assets\images\2014-07-12 19.58.48.jpg" />
     <Content Include="assets\images\488.GIF" />
+    <Content Include="assets\images\DS-logo %281%29.png" />
     <Content Include="assets\images\DS.jpg" />
     <Content Include="assets\images\DS1.jpg" />
     <Content Include="assets\images\DS10.JPG" />
@@ -273,7 +274,7 @@
     <Content Include="assets\js\jquery.simple-text-rotator.js" />
     <Content Include="assets\js\jquery.simple-text-rotator.min.js" />
     <Content Include="assets\js\jquery.waypoints.js" />
-    <Content Include="assets\js\jsexcercises.js" />
+    <Content Include="assets\js\jsexercises.js" />
     <Content Include="assets\js\owl.carousel.js" />
     <Content Include="assets\js\owl.carousel.min.js" />
     <Content Include="assets\js\smoothscroll.js" />
@@ -322,6 +323,7 @@
     <Content Include="assets\fonts\FontAwesome.otf" />
     <Content Include="assets\php\contactForm.php" />
     <Content Include="assets\Scinto_Daniel_Resume.pdf" />
+    <Content Include="assets\Scinto_Daniel_Resume_16.pdf" />
     <None Include="Properties\PublishProfiles\dscinto - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dscinto - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
