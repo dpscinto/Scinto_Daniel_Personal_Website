@@ -1,39 +1,39 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="personalSite">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	<title>Dan Scinto</title>
+    <title>Dan Scinto</title>
 
     <link rel="icon"
           type="image/png"
           href="assets/images/DS-logo (1).png">
-    
+
     <!-- CSS -->
-	<!-- Bootstrap core CSS -->
-	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-	<!-- Owl Carousel -->
-	<link href="assets/css/owl.theme.css" rel="stylesheet">
-	<link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <!-- Owl Carousel -->
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
 
-	<!-- Magnific-popup lightbox -->
-	<link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <!-- Magnific-popup lightbox -->
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
 
-	<!-- Simple text rotator -->
-	<link href="assets/css/simpletextrotator.css" rel="stylesheet">
+    <!-- Simple text rotator -->
+    <link href="assets/css/simpletextrotator.css" rel="stylesheet">
 
-	<!-- Font Awesome CSS -->
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <!-- Font Awesome CSS -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" media="screen">
 
-	<!-- Animate css -->
-	<link href="assets/css/animate.css" rel="stylesheet">
+    <!-- Animate css -->
+    <link href="assets/css/animate.css" rel="stylesheet">
 
-	<!-- Custom styles CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" media="screen">
+    <!-- Custom styles CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" media="screen">
 
     <!--SyntaxHighlighter-->
     <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
@@ -433,7 +433,7 @@
                 <div class="row">
 
                     <div class="col-md-6 col-md-offset-5 wow bounceInUp">
-                        <a href="assets/Scinto_Daniel_Resume_16.pdf" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> View PDF</a>
+                        <a target="_blank" href="assets/Scinto_Daniel_Resume_16.pdf" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> View PDF</a>
                     </div>
 
                 </div><!-- .row -->
@@ -458,7 +458,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-6 wow bounceInLeft">
-                        <a href="http://www.itsthejrny.com/">
+                        <a target="_blank" href="http://www.itsthejrny.com/">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/jrny.png" alt="">
@@ -471,22 +471,23 @@
                         </a>
                     </div>
 
-                    <div class="col-md-4 col-sm-6 wow bounceInUp">
-                        <a href="http://www.cheriescinto.com/">
+                    <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
+                        <a href="" class="pop-up" data-toggle="modal" data-target="comingsoon1">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
-                                    <img src="assets/images/cherie-scinto.png" alt="">
+                                    <img src="assets/images/road-sky-clouds-cloudy.jpg" alt="">
                                 </div>
                                 <div class="portfolio-item-description">
-                                    <h3>Real Estate Website</h3>
-                                    <p>Squarespace</p>
+                                    <h3>Travel Blog</h3>
+                                    <p>Coming Soon!</p>
                                 </div>
                             </div>
                         </a>
                     </div>
 
                     <div class="col-md-4 col-sm-6 wow bounceInRight">
-                        <a href="" class="pop-up" data-toggle="modal" data-target="#FizzBuzz">  <!--Modal content-->
+                        <a href="" class="pop-up" data-toggle="modal" data-target="#FizzBuzz">
+                            <!--Modal content-->
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/javascript-image.png" alt="">
@@ -500,7 +501,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
-                        <a href="http://dscinto-carfinder.azurewebsites.net/">
+                        <a target="_blank" href="http://dscinto-carfinder.azurewebsites.net/">
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
                                     <img src="assets/images/carcover3.jpg" alt="">
@@ -862,7 +863,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">5 Numbers</h4>
                 </div>
-               
+
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-6">
@@ -902,9 +903,9 @@
 
                             <b><p id="answer"></b>
                             </p>
-                            </div>
+                        </div>
 
-                            <div class="col-md-6">
+                        <div class="col-md-6">
 <pre class="brush: js">
     function getValues() {
     var a = parseInt(document.getElementById("num1").value, 10);
@@ -942,11 +943,11 @@ function findProduct(a, b, c, d, e) {
     }
 </pre>
 
-                            </div>
                         </div>
                     </div>
                 </div>
-          </div>
+            </div>
+        </div>
     </div>
 
     <!-- Modal -->
@@ -1025,7 +1026,7 @@ function findProduct(a, b, c, d, e) {
                                 <button onclick="FizzBuzz()">Let's Play!</button>
 
                             <p id="fbresult"></p>
-                            </div>
+                        </div>
 
                         <div class="col-md-6">
 <pre class="brush: js">
@@ -1051,10 +1052,10 @@ function findProduct(a, b, c, d, e) {
         }
 </pre>
                         </div>
-                        </div>
                     </div>
-               </div>
-         </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Modal -->
@@ -1067,32 +1068,32 @@ function findProduct(a, b, c, d, e) {
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Palindrome</h4>
                 </div>
-                
-                    <div class="modal-body">  
-                                <p>
-                                    Enter a word or phrase to determine if it's a palindrome.
-                                </p>
-                                <p>
-                                    A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
-                                </p>
 
-                                <p>
-                                    (Palindrome Examples: "radar", "12321", and "race car".)
-                                </p>
+                <div class="modal-body">
+                    <p>
+                        Enter a word or phrase to determine if it's a palindrome.
+                    </p>
+                    <p>
+                        A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
+                    </p>
 
-                                <p>
-                                    <input id="palStr" type="text" />
-                                </p>
+                    <p>
+                        (Palindrome Examples: "radar", "12321", and "race car".)
+                    </p>
 
-                                <p>
-                                    <button onclick="palindrome()">Check</button>
-                                </p>
+                    <p>
+                        <input id="palStr" type="text" />
+                    </p>
 
-                                <p>
-                                <p id="palResult">
-                                </p>
-                            </div>
-                         
+                    <p>
+                        <button onclick="palindrome()">Check</button>
+                    </p>
+
+                    <p>
+                    <p id="palResult">
+                    </p>
+                </div>
+
 
 <pre class="brush: js">
     function palindrome() {
@@ -1107,10 +1108,10 @@ function findProduct(a, b, c, d, e) {
     }
 </pre>
 
-                    </div>
-                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 
     <!-- Modal -->
@@ -1130,10 +1131,16 @@ function findProduct(a, b, c, d, e) {
         </div>
     </div>
 
-<!--My JS file-->
-<script type="text/javascript" src="assets/js/jsexercises.js"></script>
+    <!--My JS file-->
+    <script type="text/javascript" src="assets/js/jsexercises.js"></script>
+
+    <!--AngularJS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap.min.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
 
 </body>
 
 
-    </html>
+</html>
