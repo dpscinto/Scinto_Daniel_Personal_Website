@@ -231,6 +231,9 @@
     <Content Include="assets\images\2014-06-23 17.14.45.jpg" />
     <Content Include="assets\images\2014-07-12 19.58.48.jpg" />
     <Content Include="assets\images\488.GIF" />
+    <Content Include="assets\images\business-money-pink-coins.jpg" />
+    <Content Include="assets\images\carcover3.jpg" />
+    <Content Include="assets\images\cherie-scinto.PNG" />
     <Content Include="assets\images\DS-logo %281%29.png" />
     <Content Include="assets\images\DS.jpg" />
     <Content Include="assets\images\DS1.jpg" />
@@ -244,6 +247,8 @@
     <Content Include="assets\images\DS8.JPG" />
     <Content Include="assets\images\DS9.JPG" />
     <Content Include="assets\images\grabbing.png" />
+    <Content Include="assets\images\javascript-image.png" />
+    <Content Include="assets\images\jrny.PNG" />
     <Content Include="assets\images\logo\award ribbon.png" />
     <Content Include="assets\images\logo\bulb.png" />
     <Content Include="assets\images\logo\calcuator.png" />
@@ -262,6 +267,7 @@
     <Content Include="assets\images\P7060406.JPG" />
     <Content Include="assets\images\p8.jpg" />
     <Content Include="assets\images\P8161524.JPG" />
+    <Content Include="assets\images\pexels-photo-12200.jpeg" />
     <Content Include="assets\js\custom.js" />
     <Content Include="assets\js\jquery-1.11.0.js" />
     <Content Include="assets\js\jquery-1.11.0.min.js" />
