@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="personalSite">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -76,7 +76,8 @@
                         <li><a href="#resume">Resume</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#photography">Photography</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://dscinto-blog.azurewebsites.net/Home/Contact">Contact</a></li>
+                        <li><a href="https://dscinto-blog.azurewebsites.net/blogposts"</a>Blog</li>
                     </ul>
                 </div>
 
@@ -486,7 +487,7 @@
                     </div>
 
                     <div class="col-md-4 col-sm-6 wow bounceInRight">
-                        <a href="" class="pop-up" data-toggle="modal" data-target="#FizzBuzz">
+                        <a href="" class="pop-up" data-toggle="modal" data-target="#JavaScript">
                             <!--Modal content-->
                             <div class="portfolio-item">
                                 <div class="portfolio-item-preview">
@@ -508,7 +509,7 @@
                                 </div>
                                 <div class="portfolio-item-description">
                                     <h3>Car Finder</h3>
-                                    <p>Web App</p>
+                                    <p>Web API</p>
                                 </div>
                             </div>
                         </a>
@@ -737,67 +738,6 @@
         </section>
 
         <!-- Photography section end -->
-        <!-- Contact section start -->
-
-        <section id="contact" class="section">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-12 headline wow bounceInLeft">
-                        <h2>Get in Touch</h2>
-                        <p>Send me a message or give me a ring. I'd love to hear from you.</p>
-                    </div>
-
-                    <div class="col-md-6 wow bounceInUp">
-
-                        <p>Please reach out in regards to opportunities in tech, education, or education tech.</p>
-
-                        <ul class="icon-list">
-                            <li><i class="fa fa-fw fa-map-marker"></i>Jamestown, NC</li>
-                            <li><i class="fa fa-fw fa-phone"></i>+1 336.337.8040</li>
-                            <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">dpscinto@gmail.com</a></li>
-                            <li><i class="fa fa-fw fa-globe"></i><a href="">http://www.dscinto.azurewebsites.net</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div class="col-md-6 wow bounceInRight">
-
-                        <form id="contact-form" role="form">
-
-                            <div class="form-group">
-                                <label class="sr-only" for="c_name">Name</label>
-                                <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-                            </div>
-
-                            <div class="form-group">
-                                <label class="sr-only" for="c_email">Email address</label>
-                                <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-                            </div>
-
-                            <div class="form-group">
-                                <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn btn-custom-1 pull-right">
-                                <i class="fa fa-bullhorn icon-before"></i> Send it
-                            </button>
-
-                        </form>
-
-                        <div class="ajax-response"></div>
-
-                    </div>
-
-                </div><!-- .row -->
-
-            </div><!-- .container -->
-
-        </section>
-
-        <!-- Contact section end -->
         <!-- Footer start -->
 
         <footer id="footer">
@@ -808,7 +748,7 @@
 
                     <div class="col-md-12">
                         <p class="copy">
-                            © 2015 Dan Scinto, All Rights Reserved.
+                            © 2016 Dan Scinto, All Rights Reserved.
                         </p>
                     </div>
 
@@ -853,59 +793,69 @@
         SyntaxHighlighter.all();</script>
 
 
-    <!-- Modal -->
-    <div id="5numbers" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
 
-            <!-- Modal content-->
+    <div id="JavaScript" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">5 Numbers</h4>
+                    <h3>JavaScript Exercises</h3>
                 </div>
+                <div class="tabbable">
+                    <!-- Only required for left/right tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1" data-toggle="tab">5 Numbers</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Factorial</a></li>
+                        <li><a href="#tab3" data-toggle="tab">FizzBuzz</a></li>
+                        <li><a href="#tab4" data-toggle="tab">Palindrome</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>
+                                            1) Enter any 5 numbers in the spaces below.
+                                        </p>
+                                        <p>
+                                            2) Choose if you would like to find the least, greatest, sum, product, or mean of the set of numbers.
+                                        </p>
+                                        <div class="col-md-offset-4">
+                                            <p>
+                                                1) <input id="num1" type="text" />
+                                            </p>
+                                            <p>
+                                                2) <input id="num2" type="text" />
+                                            </p>
+                                            <p>
+                                                3) <input id="num3" type="text" />
+                                            </p>
+                                            <p>
+                                                4) <input id="num4" type="text" />
+                                            </p>
+                                            <p>
+                                                5) <input id="num5" type="text" />
+                                            </p>
+                                        </div>
+                                        <div class="col-md-offset-2">
+                                            <p>
+                                                <button onclick="LowestNumber()">Least</button>
 
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                1) Enter any 5 numbers in the spaces below.
-                            </p>
-                            <p>
-                                2) Choose if you would like to find the least, greatest, sum, product, or mean of the set of numbers.
-                            </p>
+                                                <button onclick="GreatestNumber()">Greatest</button>
 
-                            <p>
-                                <input id="num1" type="text" />
-                            </p>
-                            <p>
-                                <input id="num2" type="text" />
-                            </p>
-                            <p>
-                                <input id="num3" type="text" />
-                            </p>
-                            <p>
-                                <input id="num4" type="text" />
-                            </p>
-                            <p>
-                                <input id="num5" type="text" />
-                            </p>
-                            <p>
-                                <button onclick="LowestNumber()">Least</button>
+                                                <button onclick="findMean()">Mean</button>
 
-                                <button onclick="GreatestNumber()">Greatest</button>
+                                                <button onclick="findSum()">Sum</button>
 
-                                <button onclick="findMean()">Mean</button>
+                                                <button onclick="findProduct()">Product</button>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-offset-3">
+                                            <h2 id="answer"></h2>
+                                        </div>
+                                    </div>
 
-                                <button onclick="findSum()">Sum</button>
-
-                                <button onclick="findProduct()">Product</button>
-                            </p>
-
-                            <b><p id="answer"></b>
-                            </p>
-                        </div>
-
-                        <div class="col-md-6">
+                                    <div class="col-md-6">
 <pre class="brush: js">
     function getValues() {
     var a = parseInt(document.getElementById("num1").value, 10);
@@ -943,32 +893,20 @@ function findProduct(a, b, c, d, e) {
     }
 </pre>
 
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal -->
-    <div id="factorials" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
+                        <div class="tab-pane" id="tab2">
+                            <div class="modal-body">
+                                <p>Enter a number to find its factorial(!)</p>
+                                <p>Example of a factorial:  5! = 5 * 4 * 3 * 2 * 1</p>
+                                <input id="num6" type="text" />
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Factorials</h4>
-                </div>
-                <div class="modal-body">
-                    <body>
-                        <p>Enter a number to find its factorial(!)</p>
-                        <p>Example of a factorial:  5! = 5 * 4 * 3 * 2 * 1</p>
-                        <input id="num6" type="text" />
+                                <button onclick="findFact()">GO!</button>
 
-                        <button onclick="findFact()">GO!</button>
-
-                        <p id="facResult"></p>
+                                <p id="facResult"></p>
 
 <pre class="brush: js">
             function findFact() {
@@ -988,47 +926,37 @@ function findProduct(a, b, c, d, e) {
             }
         }
 </pre>
-                    </body>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal -->
-    <div id="FizzBuzz" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="m    odal-title">FizzBuzz</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                <b>Fizz Buzz </b>is a group word game for children to teach them about division. Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five with the word "buzz".
-                            </p>
-                            <p>
-                                We are going to change things up and let you decide which divisors trigger "fizz" and "buzz".
-                            </p>
-                            <p>
-                                Please choose 2 numbers to start:
-                            </p>
-                            <p>
-                                1) <input id="fbnum1" type="text" /> "fizz"
-                            </p>
-                            <p>
-                                2) <input id="fbnum2" type="text" /> "buzz"
-
-                                &nbsp; &nbsp; &nbsp;
-                                <button onclick="FizzBuzz()">Let's Play!</button>
-
-                            <p id="fbresult"></p>
+                            </div>
                         </div>
 
-                        <div class="col-md-6">
+
+                        <div class="tab-pane" id="tab3">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p>
+                                            <b>Fizz Buzz </b>is a group word game for children to teach them about division. Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five with the word "buzz".
+                                        </p>
+                                        <p>
+                                            We are going to change things up and let you decide which divisors trigger "fizz" and "buzz".
+                                        </p>
+                                        <p>
+                                            Please choose 2 numbers to start:
+                                        </p>
+                                        <p>
+                                            1) <input id="fbnum1" type="text" /> "fizz"
+                                        </p>
+                                        <p>
+                                            2) <input id="fbnum2" type="text" /> "buzz"
+
+                                            &nbsp; &nbsp; &nbsp;
+                                            <button onclick="FizzBuzz()">Let's Play!</button>
+
+                                        <p id="fbresult"></p>
+                                    </div>
+
+                                    <div class="col-md-6">
 <pre class="brush: js">
         function FizzBuzz() {
             var a = document.getElementById("fbnum1").value;
@@ -1051,48 +979,37 @@ function findProduct(a, b, c, d, e) {
                 document.getElementById("fbresult").innerHTML = txt;
         }
 </pre>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal -->
-    <div id="palindrome" class="modal fade " role="dialog">
-        <div class="modal-dialog modal-lg">
 
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Palindrome</h4>
-                </div>
 
-                <div class="modal-body">
-                    <p>
-                        Enter a word or phrase to determine if it's a palindrome.
-                    </p>
-                    <p>
-                        A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
-                    </p>
+                        <div class="tab-pane" id="tab4">
+                            <div class="modal-body">
+                                <p>
+                                    Enter a word or phrase to determine if it's a palindrome.
+                                </p>
+                                <p>
+                                    A palindrome is a word, phrase, number, or other sequence of characters which reads the same backward or forward. Allowances may be made for adjustments to capital letters, punctuation, and word dividers.
+                                </p>
 
-                    <p>
-                        (Palindrome Examples: "radar", "12321", and "race car".)
-                    </p>
+                                <p>
+                                    (Palindrome Examples: "radar", "12321", and "race car".)
+                                </p>
 
-                    <p>
-                        <input id="palStr" type="text" />
-                    </p>
+                                <p>
+                                    <input id="palStr" type="text" />
+                                </p>
 
-                    <p>
-                        <button onclick="palindrome()">Check</button>
-                    </p>
+                                <p>
+                                    <button onclick="palindrome()">Check</button>
+                                </p>
 
-                    <p>
-                    <p id="palResult">
-                    </p>
-                </div>
+                                <p>
+                                <p id="palResult">
+                                </p>
 
 
 <pre class="brush: js">
@@ -1107,25 +1024,9 @@ function findProduct(a, b, c, d, e) {
         }
     }
 </pre>
-
-            </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- Modal -->
-    <div id="comingsoon1" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Coming Soon</h4>
-                </div>
-                <div class="modal-body">
-
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1134,11 +1035,6 @@ function findProduct(a, b, c, d, e) {
     <!--My JS file-->
     <script type="text/javascript" src="assets/js/jsexercises.js"></script>
 
-    <!--AngularJS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="Scripts/angular-ui/ui-bootstrap.min.js"></script>
-    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
 
 </body>
 
