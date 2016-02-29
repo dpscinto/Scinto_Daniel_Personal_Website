@@ -20,6 +20,11 @@ img {
 	height: auto;
 }
 
+#portfolio img {
+	max-width: 320px;
+    height: 240px;
+}
+
 a {
 	color: #8C8C8C; /*link color*/
 }
