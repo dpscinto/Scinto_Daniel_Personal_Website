@@ -222,6 +222,7 @@
     <Content Include="assets\css\magnific-popup.css" />
     <Content Include="assets\css\owl.carousel.css" />
     <Content Include="assets\css\owl.theme.css" />
+    <Content Include="assets\images\pexels-photo.jpg" />
     <Content Include="assets\css\simpletextrotator.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
