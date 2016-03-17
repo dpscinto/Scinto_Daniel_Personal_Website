@@ -224,6 +224,7 @@
     <Content Include="assets\css\magnific-popup.css" />
     <Content Include="assets\css\owl.carousel.css" />
     <Content Include="assets\css\owl.theme.css" />
+    <Content Include="assets\images\magnify.jpg" />
     <Content Include="assets\images\pexels-photo.jpg" />
     <Content Include="assets\css\simpletextrotator.css" />
     <Content Include="assets\css\style.css" />
@@ -334,6 +335,7 @@
     <Content Include="assets\php\contactForm.php" />
     <Content Include="assets\Scinto_Daniel_Resume.pdf" />
     <Content Include="assets\Scinto_Daniel_Resume_16.pdf" />
+    <Content Include="assets\Scinto_Daniel_Resume_April16.pdf" />
     <None Include="Properties\PublishProfiles\dscinto - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dscinto - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
